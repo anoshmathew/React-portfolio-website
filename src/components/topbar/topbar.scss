@@ -1,6 +1,6 @@
 @import "../../global.scss";
 
-.topbar {
+.topbar{
   width: 100%;
   height: 70px;
   background-color: white;
@@ -59,7 +59,7 @@
           
           height: 3px;
           background-color: $mainColor;
-          transform-origin:left;
+         transform-origin:left;
           transition:all 1s ease;
         }
       }

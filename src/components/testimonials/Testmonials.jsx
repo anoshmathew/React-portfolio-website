@@ -10,7 +10,7 @@ export default function Testmonial() {
             img:"https://face2faceplanning.com/wp-content/uploads/2016/12/owner-professional.png",
             icon:"assets/twitter.png",
             desc: "lorem ispum delfjsndfjnkjdnfjkns jvnfdvn jfgnui ugu i8rn",
-            featured:true,
+           
         },
         {
             id:2,
@@ -19,8 +19,17 @@ export default function Testmonial() {
             img:"https://paloaltoheadshots.com/wp-content/uploads/2021/01/Business-Portraits_001.jpg",
             icon:"assets/youtube.png",
             desc:"Lorem ipsum dolor sit dfsf edb dolorm.",
+            featured:true,
             
         },
+        {
+            id:2,
+            name:"Alexa Kalinski",
+            title:"Senior Developer",
+            img:"https://paloaltoheadshots.com/wp-content/uploads/2021/01/Business-Portraits_001.jpg",
+            icon:"assets/youtube.png",
+            desc:"Lorem ipsum dolor sit dfsf edb dolorm.",
+        }
     ];
 
     return (

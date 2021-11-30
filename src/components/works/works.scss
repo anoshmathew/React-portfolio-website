@@ -1,9 +1,16 @@
 .works {
+  
   background-color: crimson;
   display: flex;
+ 
   align-items: center;
   justify-content: center;
   position: relative;
+  h2{
+      
+    color: black;
+    font-size: 30px;
+  }
   .arrow{
       height:50px;
       position: absolute;

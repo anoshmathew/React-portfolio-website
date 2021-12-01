@@ -1,3 +1,4 @@
+@import "../../global.scss";
 .works {
   
   background-color: crimson;
@@ -6,16 +7,14 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  h2{
-      
-    color: black;
-    font-size: 30px;
-  }
+  
   .arrow{
       height:50px;
       position: absolute;
       cursor: pointer;
-
+      @include mobile{
+        display: none;
+      }
       &.left{
           left:100px;
           transform:rotateY(180deg);
@@ -23,9 +22,7 @@
       }
 
       &.right{
-          right:100px;
-
-          
+          right:100px; 
       }
   }
   .slider {
@@ -34,6 +31,13 @@
     position: absolute;
     left: 0;
     transition: all 1s ease-out;
+
+    @include mobile{
+      height: 89vh;
+      flex-direction: column;
+      justify-content: center;
+    }
+
     .container {
       width: 100vw;
       display: flex;
@@ -49,17 +53,31 @@
         align-items: center;
         justify-content: center;
 
+        @include mobile{
+          width: 90%;
+          height: 180px;
+          margin: 5px 0px;
+          
+        }
+
         .left {
           flex: 4;
           height: 80%;
           display: flex;
+          flex-direction: column; // not in yt
           align-items: center;
+          @include mobile{
+            height: 90%;
+          }
           .leftContainer {
             width: 90%;
             height: 70%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            @include mobile{
+              height: 90%;
+            }
             .imgContainer {
               width: 40px;
               height: 40px;
@@ -68,22 +86,43 @@
               display: flex;
               align-items: center;
               justify-content: center;
-
+              margin-left: 5px;
+              @include mobile{
+                width: 30px;
+                height: 30px;
+                
+              }
+              
               img {
                 width: 25px;
+                @include mobile{
+                  width:20px;
+                
+                }
               }
             }
             h2 {
               font-size: 20px;
+              margin-left: 5px;
+              @include mobile{
+                font-size: 15px;
+               
+              }
             }
             p {
               font-size: 13px;
+              margin-left: 5px;
+              @include mobile{
+                font-size: 12px;
+                
+              }
             }
             span {
               font-size: 12px;
               font-weight: 600;
               text-decoration: underline;
               cursor: pointer;
+              margin-left: 5px;
             }
           }
         }
@@ -94,10 +133,13 @@
           align-items: center;
           justify-content: center;
           overflow: hidden;
-
+          @include mobile{
+                flex: 6;
+          }
           img {
             width: 400px;
             transform: rotate(-10deg);
+           
           }
         }
       }

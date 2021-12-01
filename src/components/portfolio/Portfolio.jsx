@@ -15,7 +15,7 @@ export default function Portfolio() {
     const list = [
         {
             id: "featured",
-            title:"featured",
+            title:"Featured",
         },
         {
             id: "web",

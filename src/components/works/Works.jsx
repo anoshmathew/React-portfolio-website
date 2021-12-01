@@ -33,7 +33,7 @@ const handleClick = (way)=>{
     return (
         <div className="works" id="works">
             
-                <h2>Works</h2>          
+                 
             
             <div className="slider" style={{transform:`translateX(-${currentSlide *100}vw)`}}>
                 {data.map((d) => (

@@ -34,7 +34,7 @@ export default function Testmonial() {
 
     return (
         <div className="testmonials" id="testmonials">
-            <h1>Testmonials</h1>
+            <h1>Testimonials</h1>
             <div className="container">
                 {data.map((d)=>( 
 
